@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flask Parent Template</title>
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <header>
+        <div class="header-text">
+            <p>Display your Ad here</p>
+          </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1> &infin; Pickup Lines for When You <br> See Someone Cute</h1>
+    </div>
+
+
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+
+</html>

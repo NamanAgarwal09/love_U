@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% block content%}
+
+<div class="box">
+    <form action="/add" method="post">
+        <input type="text" name="number" autofocus placeholder="Number" style="width: 500px;">
+        <input type="text" name="name" autofocus placeholder="Line" style="width: 500px;">
+        <button type="submit">submit</button>
+    </form>
+</div>
+
+{% endblock %}
